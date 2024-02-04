@@ -1,0 +1,1461 @@
+@charset "UTF-8";
+body {
+  font-family: Poppins, sans-serif;
+}
+ul {
+  list-style: none;
+}
+/****************************** 
+    
+    PC STYlE - (미디어쿼리 없이 디폴트)
+
+*******************************/
+.brand-customize.brand-dt-cont {
+  padding-bottom: 100px;
+}
+.brand-customize.brand-dt-cont .brand-cont {
+  padding-bottom: 130px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.brand-customize.brand-dt-cont .brand-tit {
+  margin-bottom: 20px;
+  font-size: 80px;
+  line-height: 85px;
+}
+.brand-customize.brand-dt-cont .brand-sub-tit {
+  margin-bottom: 5px;
+  font-size: 50px;
+  line-height: 56px;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+.brand-customize.brand-dt-cont .brand-tit-desc {
+  margin-bottom: 16px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 600;
+}
+.brand-customize.brand-dt-cont .brand-img {
+  display: block;
+  margin-top: 20px;
+}
+.brand-customize.brand-dt-cont .brand-img + .brand-dtbtn-wrap {
+  margin-top: 40px;
+  font-size: 35px;
+  font-weight: 600;
+}
+.brand-customize.brand-dt-cont .produced-txt {
+  text-align: center;
+}
+/* 브랜드 상세 버튼 */
+.brand-customize.brand-dt-cont .brand-dtbtn-wrap {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.brand-customize.brand-dt-cont .brand-dt-btn {
+  position: relative;
+  z-index: 3;
+  position: relative;
+  padding: 25px 26px;
+  color: #000;
+  font-size: 35px;
+  font-weight: 600;
+  box-sizing: border-box;
+  line-height: 50px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 200px;
+  background: linear-gradient(to right, #000 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.15s;
+}
+.brand-customize.brand-dt-cont .brand-dt-btn:hover {
+  background-position: left bottom;
+  color: #fff;
+}
+.brand-customize.brand-dt-cont .brand-dt-btn:hover:before {
+  width: 100%;
+}
+.brand-customize.brand-dt-cont .brand-dt-btn:after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 200px;
+  border: 3px solid #000;
+}
+
+/* .produced-txt */
+.brand-customize.brand-dt-cont .produced-txt {
+  font-size: 25px;
+  line-height: 38px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/****************************** 
+    
+    Mobile, tablit(ipad air기준) 까지
+
+*******************************/
+@media only screen and (max-width: 820px) {
+  /* .brand-dt-cont(배너) */
+  .brand-customize.brand-dt-cont {
+    padding-bottom: calc(34px + (100 - 34) * ((100vw - 320px) / (820 - 320)));
+  }
+  /* .brand-tit */
+  .brand-customize.brand-dt-cont .brand-tit {
+    font-size: calc(30px + (80 - 30) * ((100vw - 320px) / (820 - 320)));
+    line-height: calc(36px + (85 - 36) * ((100vw - 320px) / (820 - 320)));
+  }
+  /* .brand-sub-tit */
+  .brand-customize.brand-dt-cont .brand-sub-tit {
+    font-size: calc(24px + (50 - 24) * ((100vw - 320px) / (820 - 320)));
+    line-height: calc(24px + (56 - 24) * ((100vw - 320px) / (820 - 320)));
+  }
+  /* .brand-tit-desc */
+  .brand-customize.brand-dt-cont .brand-tit-desc {
+    font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (820 - 320)));
+    line-height: calc(20px + (36 - 20) * ((100vw - 320px) / (820 - 320)));
+  }
+  /* .brnd-cont */
+  .brand-customize.brand-dt-cont .brand-cont {
+    font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (820 - 320)));
+    line-height: calc(20px + (28 - 20) * ((100vw - 320px) / (820 - 320)));
+    padding-bottom: calc(70px + (130 - 70) * ((100vw - 320px) / (820 - 320)));
+  }
+  /* 브랜드 상세 버튼 */
+  .brand-customize.brand-dt-cont .brand-img + .brand-dtbtn-wrap {
+    margin-top: 30px;
+  }
+  .brand-customize.brand-dt-cont .brand-dt-btn {
+    font-size: calc(18px + (30 - 18) * ((100vw - 320px) / (820 - 320)));
+    padding: 10px 16px;
+  }
+
+  /* .produced-txt */
+  .brand-customize.brand-dt-cont .produced-txt {
+    font-size: calc(11px + (25 - 11) * ((100vw - 320px) / (820 - 320)));
+    line-height: calc(15px + (38 - 15) * ((100vw - 320px) / (820 - 320)));
+  }
+}
+
+/****************************** 
+    
+    Mobile
+
+*******************************/
+
+@media only screen and (max-width: 319px) {
+  .brand-customize.brand-dt-cont .brand-cont {
+    padding-bottom: 30px;
+  }
+  .brand-customize.brand-dt-cont .brand-tit {
+    margin-bottom: 10px;
+  }
+  .brand-customize.brand-dt-cont .brand-tit-desc {
+    margin-bottom: 20px;
+  }
+}
+.brand-customize.brand-dt-cont.brand-voltron {
+  overflow: hidden;
+  position: relative;
+  background: #000;
+  color: #fff;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+}
+.brand-customize.brand-dt-cont .produced-txt {
+  text-align: center;
+}
+.brand-customize.brand-dt-cont .brand-voltron__inner {
+  max-width: 840px;
+  margin: 0 auto;
+}
+.brand-customize.brand-dt-cont .brand-discord___inner {
+  max-width: 440px;
+  margin: 0 auto;
+}
+.brand-customize.brand-dt-cont .voltron-roadmap__inner {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.brand-customize.brand-dt-cont h2 {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.brand-customize.brand-dt-cont .voltron-font-size-xxl {
+  font-size: 90px;
+  line-height: 120px;
+}
+.brand-customize.brand-dt-cont .voltron-font-size-xl,
+.brand-customize.brand-dt-cont .loadmap-list__num {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 100px;
+}
+.brand-customize.brand-dt-cont .voltron-font-size-l {
+  font-size: 70px;
+  line-height: 70px;
+}
+.brand-customize.brand-dt-cont .voltron-font-size-m {
+  font-size: 50px;
+  line-height: 80px;
+  font-weight: normal;
+}
+
+.brand-customize.brand-dt-cont .btn-voltron {
+  position: relative;
+  display: inline-flex;
+  z-index: 3;
+  padding: 14px 50px;
+  color: #ff2100;
+  font-size: 20px;
+  font-weight: 700;
+  box-sizing: border-box;
+  line-height: 50px;
+  text-align: center;
+  line-height: 30px;
+  background: linear-gradient(to right, #ff2100 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.15s;
+}
+.brand-customize.brand-dt-cont .btn-voltron:after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border: 2px solid #ff2100;
+}
+.brand-customize.brand-dt-cont .btn-voltron__svg {
+  display: inline-flex;
+  align-items: center;
+  width: 25px;
+  margin-left: 7px;
+}
+.brand-customize.brand-dt-cont .btn-voltron__svg svg path {
+  transition: all 0.1s;
+}
+.brand-customize.brand-dt-cont .btn-voltron:hover {
+  background-position: left bottom;
+  color: #fff;
+}
+.brand-customize.brand-dt-cont .btn-voltron:hover:before {
+  width: 100%;
+}
+.brand-customize.brand-dt-cont .btn-voltron:hover .btn-voltron__svg svg path {
+  stroke: #fff;
+}
+.brand-customize.brand-dt-cont .brand-voltron__bg-star {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+.brand-customize.brand-dt-cont.brand-voltron
+  > div:not(.brand-voltron__bg-star) {
+  position: relative;
+}
+
+.brand-customize.brand-dt-cont .voltron-main .brand-voltron__inner {
+  position: relative;
+  z-index: 2;
+}
+/* .voltron-main__bg-object{position: absolute;z-index: 0;top: 0;transform: translate3d(0, 4rem, 0);left: 0;opacity: 0;transition: opacity 800ms 0.4s, transform 800ms cubic-bezier(0.13, 0.07, 0.26, 0.99) 0.5s;} */
+.brand-customize.brand-dt-cont .voltron-main__bg-object {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  transform: translate3d(0, 4rem, 0);
+  left: 0;
+}
+
+/* .voltron-main */
+.brand-customize.brand-dt-cont .voltron-main {
+  margin-bottom: 130px;
+}
+.brand-customize.brand-dt-cont .voltron-main__header {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 25px;
+  padding-top: 36px;
+  color: #ff2100;
+  font-weight: 700;
+}
+.brand-customize.brand-dt-cont .voltron-main__tit-desc {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 30px;
+  line-height: 45px;
+}
+.brand-customize.brand-dt-cont .voltron-main__tit-desc::after {
+  content: "";
+  display: inline-block;
+  flex: 1 1 10px;
+  width: 100px;
+  height: 3px;
+  margin-left: 17px;
+  background: #ff2100;
+}
+.brand-customize.brand-dt-cont .voltron-main__spot {
+  position: relative;
+  margin-bottom: 25px;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 80px;
+}
+.brand-customize.brand-dt-cont .volt-main-list__text-wrap span,
+.brand-customize.brand-dt-cont .volt-main-list__text-wrap span:after {
+  animation-iteration-count: 1;
+  animation-duration: 1.2s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.666, 0, 0.237, 1);
+}
+.brand-customize.brand-dt-cont .volt-main-list__text-wrap span:after {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  transform: translateX(-50%);
+  pointer-events: none;
+  padding-right: 15px;
+  width: 200%;
+  height: 100%;
+}
+.brand-customize.brand-dt-cont .volt-main-list__text-wrap span {
+  display: inline-block;
+  position: relative;
+  padding-right: 15px;
+  -webkit-clip-path: inset(0 -2% -20% 0);
+  clip-path: inset(0 -2% -20% 0);
+}
+
+/* .voltron-figures__canvas-wrap{position: absolute;width: 53%;height: auto;bottom:0;left: 50%;transform: translateX(-50%);} */
+.brand-customize.brand-dt-cont .voltron-figures__canvas {
+  position: absolute;
+  bottom: -10%;
+  left: 9%;
+  width: 82%;
+}
+
+@media (min-width: 1025px) {
+  .brand-customize.brand-dt-cont .volt-main-list__text-wrap span {
+    white-space: nowrap;
+    position: relative;
+    display: block;
+    padding: 2px 0;
+    width: 100%;
+  }
+  .brand-customize.brand-dt-cont .volt-main-list__text-wrap span:before {
+    position: absolute;
+    content: "";
+    height: 105%;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    background-color: #ff2100;
+    top: 0;
+    left: 0;
+    transition: transform 444ms cubic-bezier(0.666, 0, 0.237, 1);
+    z-index: -1;
+  }
+  .brand-customize.brand-dt-cont .volt-main-list__text-wrap:hover span:before {
+    transform: scale(1);
+  }
+}
+
+/* .voltron-defender */
+.brand-customize.brand-dt-cont .voltron-defender {
+  position: relative;
+  padding: 0 0 79px;
+  margin-bottom: 100px;
+}
+.brand-customize.brand-dt-cont .voltron-defender .brand-voltron__inner {
+  position: relative;
+}
+.brand-customize.brand-dt-cont .voltron-defender .voltron-defende__box {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: red;
+}
+.brand-customize.brand-dt-cont .voltron-defender__robot {
+  position: absolute;
+  top: -92px;
+  left: 79px;
+  z-index: 3;
+  -webkit-clip-path: inset(0 -2% -20% 0);
+}
+.brand-customize.brand-dt-cont .voltron-defender__svg-text {
+  position: absolute;
+  top: 168px;
+  left: 414px;
+  z-index: 3;
+}
+.brand-customize.brand-dt-cont .voltron-defender__svg-text svg {
+  width: 358px;
+  height: 131px;
+}
+.brand-customize.brand-dt-cont .voltron-defender__svg-bg {
+  position: absolute;
+  top: 0;
+  left: 134px;
+  z-index: 2;
+}
+.brand-customize.brand-dt-cont .voltron-defender__svg-bg svg {
+  width: 459px;
+  height: 282px;
+}
+
+/* .voltron-cont  */
+.brand-customize.brand-dt-cont .voltron-cont {
+  color: #ff2100;
+}
+.brand-customize.brand-dt-cont .tl-through {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+/* .voltron-cont--short-intro */
+.brand-customize.brand-dt-cont .voltron-big-text {
+  position: relative;
+  padding: 100px 0 200px;
+  font-size: 500px;
+  line-height: 250px;
+  font-weight: 200;
+  letter-spacing: -2px;
+}
+.brand-customize.brand-dt-cont .scroll-text-wrap > p {
+  position: relative;
+  white-space: nowrap;
+  z-index: 2;
+}
+.brand-customize.brand-dt-cont .scroll-text-wrap .voltron-big-text__strok {
+  color: #000;
+  -webkit-text-stroke: 2px #ff2100;
+  z-index: 1;
+}
+.brand-customize.brand-dt-cont .voltron-big-text__img {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  scale: 1;
+}
+.brand-customize.brand-dt-cont .voltron-big-text__img__inner {
+  display: block;
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+.brand-customize.brand-dt-cont .voltron-big-text__img__inner > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.brand-customize.brand-dt-cont .spacer--triger {
+  height: 200px;
+  background: red;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+/* .voltron-big-text>div{margin-left: -540px;} */
+/* .brand-discord___inner */
+.brand-customize.brand-dt-cont .brand-discord {
+  margin-bottom: 234px;
+  padding: 75px 0 85px;
+}
+.brand-customize.brand-dt-cont .brand-discord___inner {
+  position: relative;
+  z-index: 2;
+  padding: 100px 40px;
+  background: #6100ff;
+}
+.brand-customize.brand-dt-cont .brand-discord__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.brand-customize.brand-dt-cont .brand-discord__tit {
+  margin-bottom: 30px;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 700;
+}
+.brand-customize.brand-dt-cont .brand-discord__btn-wrap {
+  margin-bottom: 30px;
+}
+.brand-customize.brand-dt-cont .brand-discord .btn-voltron {
+  color: #fff;
+  background-image: linear-gradient(to right, #fff 50%, transparent 50%);
+}
+.brand-customize.brand-dt-cont .brand-discord .btn-voltron::after {
+  border-color: #fff;
+}
+.brand-customize.brand-dt-cont .brand-discord .btn-voltron:hover {
+  background-position: left bottom;
+  color: #6100ff;
+}
+.brand-customize.brand-dt-cont
+  .brand-discord
+  .btn-voltron:hover
+  .btn-voltron__svg
+  svg
+  path {
+  stroke: #6100ff;
+}
+
+/* .voltron-roadmap */
+.brand-customize.brand-dt-cont .voltron-roadmap__main-tit-wrap {
+  position: relative;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.brand-customize.brand-dt-cont .voltron-roadmap__main-tit {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-size: 120px;
+  line-height: 120px;
+  font-weight: 700;
+}
+.brand-customize.brand-dt-cont .voltron-roadmap__star {
+  position: absolute;
+  top: -142px;
+  right: -42px;
+}
+.brand-customize.brand-dt-cont .voltron-roadmap__main-tit__txt {
+  display: block;
+}
+.brand-customize.brand-dt-cont .line-ani {
+  position: relative;
+  width: 100%;
+  clip-path: inset(0 0 0 0);
+}
+.brand-customize.brand-dt-cont .voltron-roadmap__line-img {
+  margin: -30px auto 0;
+  width: auto;
+  max-width: 100%;
+}
+.brand-customize.brand-dt-cont .voltron-roadmap__desc {
+  max-width: 800px;
+  margin: 0 auto 80px;
+}
+.brand-customize.brand-dt-cont .voltron-roadmap {
+  margin-bottom: 150px;
+}
+.brand-customize.brand-dt-cont .voltron-roadmap__header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  min-height: 1168px;
+  padding-top: 333px;
+  background: url(../img/voltron_nextlevel_bg.svg) no-repeat 0 0 / 100% auto;
+}
+.brand-customize.brand-dt-cont .voltron-roadmap__body {
+  padding-bottom: 240px;
+  background: #fff;
+  color: #000;
+}
+.brand-customize.brand-dt-cont .loadmap-list {
+  max-width: 815px;
+  padding: 0 20px;
+  box-sizing: content-box;
+  margin: 0 auto;
+}
+.brand-customize.brand-dt-cont .loadmap-list > li {
+  padding: 40px 0 0 0;
+}
+.brand-customize.brand-dt-cont .loadmap-list__tit {
+  margin-bottom: 5px;
+  font-size: 30px;
+  line-height: 45px;
+}
+.brand-customize.brand-dt-cont .loadmap-step {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.brand-customize.brand-dt-cont .loadmap-step > li {
+  margin-right: 1.8%;
+  padding-right: 6.7%;
+  background: url(../img/voltron_step_arrow.svg) no-repeat right 50%;
+}
+.brand-customize.brand-dt-cont .loadmap-step > li:last-child {
+  margin-right: 0;
+  padding-right: 0;
+  background: none;
+}
+.brand-customize.brand-dt-cont .loadmap-step__badge {
+  display: inline-flex;
+  align-items: center;
+  height: 34px;
+  margin-bottom: 2px;
+  padding: 5px 15px;
+  border: 2px solid #000;
+  border-radius: 60px;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: italic;
+}
+.brand-customize.brand-dt-cont .loadmap-step__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-style: italic;
+}
+.brand-customize.brand-dt-cont .loadmap-list__second {
+  display: flex;
+  flex-wrap: wrap;
+}
+.brand-customize.brand-dt-cont .loadmap-list__second__left {
+  width: 57.4%;
+  padding-right: 6%;
+  margin-right: auto;
+}
+.brand-customize.brand-dt-cont .loadmap-list__second__right {
+  width: 42.6%;
+  padding-top: 77px;
+  margin-left: auto;
+  text-align: right;
+}
+.brand-customize.brand-dt-cont .loadmap-list__third {
+  padding-bottom: 223px;
+}
+.brand-customize.brand-dt-cont .upcoming-step {
+  position: relative;
+  height: 100px;
+  width: 630px;
+  margin: 0 auto;
+}
+.brand-customize.brand-dt-cont .upcoming-step__inner {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand-customize.brand-dt-cont .upcoming-step__lst {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.brand-customize.brand-dt-cont .step-circle {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  border-radius: 100%;
+  overflow: hidden;
+  width: 22px;
+  height: 22px;
+  border: 6px solid #fff;
+}
+.brand-customize.brand-dt-cont .step-circle::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  box-sizing: border-box;
+  background: #000;
+}
+.brand-customize.brand-dt-cont .step-line {
+  display: block;
+  height: 2px;
+  width: 25%;
+  background: #fff;
+}
+.brand-customize.brand-dt-cont .upcoming-step__icon {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: -39px;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background: #000 url(../img/volotron_icon_upcomming.png) no-repeat 50% 50% /
+    100% 100%;
+}
+
+/* .voltron-cont--dream */
+.brand-customize.brand-dt-cont .voltron-cont--dream {
+  position: relative;
+  margin-bottom: 108px;
+}
+.brand-customize.brand-dt-cont .voltron-cont--dream__bg-before {
+  position: absolute;
+  top: -324px;
+  left: 0;
+  width: 464px;
+  height: 464px;
+}
+.brand-customize.brand-dt-cont .voltron-cont--dream__bg-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 527px;
+  height: 693px;
+}
+.brand-customize.brand-dt-cont .voltron-cont--dream__bg-before img,
+.brand-customize.brand-dt-cont .voltron-cont--dream__bg-center img {
+  object-fit: contain;
+}
+.brand-customize.brand-dt-cont .voltron-cont--dream__desc .dream-btn-wrap {
+  margin-top: 40px;
+}
+/* .voltron-cont--heritage */
+.brand-customize.brand-dt-cont .voltron-cont--heritage .heritage-video {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* .heritage-video__inner{position: relative;display: block;width: 100%;height:0;padding-top: 100%;} */
+/* .heritage-video__inner canvas{width: 100%;object-fit: cover;} */
+/* .heritage-video__inner img, .heritage-video__inner canvas{object-fit: cover; position: absolute;top: 0;left: 0;width: 100%;height: auto;} */
+.brand-customize.brand-dt-cont .voltron-cont--heritage .brand-voltron__inner {
+  position: relative;
+}
+/* .voltron-cont--heritage__conts{position: absolute;top: 0;left: 0;z-index: 2;} */
+/* .bg-object-wrap */
+.brand-customize.brand-dt-cont .bg-object-wrap {
+  background: url(../img/voltron_grid_object04.svg) no-repeat right top;
+}
+/* .voltron-figures-wrap */
+.brand-customize.brand-dt-cont .voltron-figures-wrap {
+  position: relative;
+  margin: 75px 0 131px;
+  margin-top: 75px;
+  margin-bottom: 131px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.brand-customize.brand-dt-cont .voltron-figures-wrap__inner {
+  position: relative;
+  display: inline-block;
+}
+.brand-customize.brand-dt-cont .voltron-figures {
+  position: static;
+  width: 100%;
+  height: 100%;
+}
+.brand-customize.brand-dt-cont .voltron-figures > img {
+  height: auto;
+  width: auto;
+}
+/* .voltron-figures__center{position: absolute;left: 50%;bottom: -120px;transform: translateX(-50%);width: 482px;height: 522px;z-index:2;} */
+.brand-customize.brand-dt-cont .voltron-figures__center {
+  position: absolute;
+  left: 0;
+  bottom: -120px;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+.brand-customize.brand-dt-cont .voltron-figures__center img {
+  display: inline-block;
+  width: 482px;
+  height: 522px;
+  z-index: 2;
+}
+.brand-customize.brand-dt-cont .voltron-figures__red {
+  position: absolute;
+  left: -170px;
+  top: 110px;
+  z-index: 1;
+}
+.brand-customize.brand-dt-cont .voltron-figures__yellow {
+  position: absolute;
+  left: 50%;
+  top: -60px;
+  transform: translateX(-50%) !important;
+  z-index: 1;
+}
+.brand-customize.brand-dt-cont .voltron-figures__blue {
+  position: absolute;
+  right: -177px;
+  top: 100px;
+  z-index: 1;
+}
+.brand-customize.brand-dt-cont .voltron-figures__green {
+  position: absolute;
+  right: -194px;
+  bottom: -14px;
+  z-index: 1;
+}
+.brand-customize.brand-dt-cont .voltron-figures__gray {
+  position: absolute;
+  left: -170px;
+  bottom: 70px;
+  z-index: 1;
+}
+.brand-customize.brand-dt-cont .voltron-figures-wrap__bg {
+  display: block;
+  z-index: 0;
+}
+/* .voltron-cont--bap */
+.brand-customize.brand-dt-cont .voltron-cont.voltron-cont--bap {
+  color: #1bff00;
+}
+.brand-customize.brand-dt-cont .voltron-cont--bap .voltron-cont--bap__inner {
+  margin-bottom: 51px;
+}
+.brand-customize.brand-dt-cont .voltron-cont--bap .voltron-cont__tit {
+  margin-bottom: 30px;
+}
+/* .voltron-cont--bap .voltron-cont__tit__sm{font-size: 50px;line-height: 80px;font-weight: 300;} */
+.brand-customize.brand-dt-cont .voltron-bap-img {
+  position: relative;
+  padding-left: 30px;
+}
+/* .voltron-bap-img__inner{position: relative;height: 293px;width: 300px;} */
+/* .voltron-bap-img img{position: absolute;top: 0;left: 0;} */
+.brand-customize.brand-dt-cont .voltron-bap-img__inner {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+}
+.brand-customize.brand-dt-cont .voltron-bap-img__inner img {
+  opacity: 1;
+  display: inline-block;
+  margin: 0 -60px;
+  vertical-align: bottom;
+  width: auto;
+  transform: scale(1);
+  flex: 0;
+}
+.brand-customize.brand-dt-cont .bap-img01 {
+  z-index: 1;
+}
+.brand-customize.brand-dt-cont .bap-img02 {
+  z-index: 2;
+}
+.brand-customize.brand-dt-cont .bap-img03 {
+  z-index: 3;
+}
+.brand-customize.brand-dt-cont .bap-img04 {
+  z-index: 4;
+}
+.brand-customize.brand-dt-cont .bap-img-wrap {
+  z-index: 4;
+}
+.brand-customize.brand-dt-cont .bap-img05 {
+  z-index: 5;
+}
+.brand-customize.brand-dt-cont .bap-img06 {
+  z-index: 6;
+}
+.brand-customize.brand-dt-cont .bap-img07 {
+  z-index: 7;
+}
+/* .voltron-cont--technology */
+.brand-customize.brand-dt-cont .voltron-cont.voltron-cont--technology {
+  color: #0038ff;
+  padding-bottom: 116px;
+}
+.brand-customize.brand-dt-cont .voltron-cont--technology .voltron-cont__tit {
+  margin-bottom: 29px;
+}
+.brand-customize.brand-dt-cont
+  .voltron-cont--technology
+  .voltron-cont__tit__sm {
+  font-size: 25px;
+  line-height: 80px;
+  font-weight: 500;
+}
+.brand-customize.brand-dt-cont .voltron-cont__tit__right {
+  text-align: right;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 1100px) {
+  /* .brand-voltron img {display: inline-block;vertical-align: top;width: auto;max-width: 100%;} */
+  .brand-customize.brand-dt-cont .loadmap-list__second__right {
+    max-width: 347px;
+  }
+}
+@media only screen and (min-width: 821px) {
+  /* .voltron-defender */
+  .brand-customize.brand-dt-cont .voltron-defender .brand-voltron__inner {
+    height: 382px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner img {
+    margin: 0 -30px;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner .bap-img04 {
+    width: 240px;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner .bap-img03 {
+    width: 200px;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner .bap-img05 {
+    width: 200px;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner .bap-img02 {
+    width: 160px;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner .bap-img06 {
+    width: 160px;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner .bap-img01 {
+    width: 140px;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner .bap-img07 {
+    width: 140px;
+  }
+}
+@media only screen and (max-width: 1125px) {
+  /* .voltron-cont--combine{margin-bottom: 100px;} */
+  .brand-customize.brand-dt-cont .voltron-figures-wrap {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  /* .voltron-figures>img{width: 60%;} */
+  .brand-customize.brand-dt-cont .voltron-figures .voltron-figures__yellow,
+  .voltron-figures .voltron-figures__blue,
+  .voltron-figures .voltron-figures__green {
+    width: 50%;
+  }
+  .brand-customize.brand-dt-cont .voltron-figures .voltron-figures__center img {
+    width: 90%;
+    height: auto;
+  }
+  .brand-customize.brand-dt-cont .voltron-figures__red {
+    left: -23%;
+    width: 55.5%;
+  }
+  .brand-customize.brand-dt-cont .voltron-figures__gray {
+    left: -22%;
+    width: 54%;
+  }
+  .brand-customize.brand-dt-cont .voltron-figures__red {
+    top: 70px;
+  }
+  .brand-customize.brand-dt-cont .voltron-figures__gray {
+    bottom: 0;
+  }
+  .brand-customize.brand-dt-cont .voltron-figures__blue {
+    right: -33%;
+    top: 10%;
+  }
+  .brand-customize.brand-dt-cont .voltron-figures__green {
+    right: -32%;
+    bottom: -4%;
+  }
+  .brand-customize.brand-dt-cont .voltron-figures__yellow {
+    top: -8%;
+    left: 52%;
+  }
+  .brand-customize.brand-dt-cont .voltron-big-text {
+    font-size: 400px;
+  }
+  /* .voltron-cont--heritage */
+  .brand-customize.brand-dt-cont .voltron-cont--heritage {
+    margin-bottom: 30px;
+  }
+  .brand-customize.brand-dt-cont .voltron-cont--heritage__conts {
+    position: static;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  /* .heritage-video__inner{flex-grow: 0;flex-shrink: 0;width: 100%; height: 0;padding-bottom: 40%;position: relative;} */
+  /* .heritage-video__inner img, .heritage-video__inner canvas{position: absolute;top: 0;left: 0;width: 100%;height: 100%;} */
+  .brand-customize.brand-dt-cont .voltron-figures-wrap {
+    width: 70%;
+    margin-top: 80px;
+    margin-bottom: 90px;
+  }
+  .brand-customize.brand-dt-cont .bg-object-wrap {
+    background-size: 70% auto;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img {
+    padding-left: 20px;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner {
+    padding-bottom: 20px;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner img {
+    margin: 0 -28px;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner .bap-img04 {
+    width: 200px;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner .bap-img03 {
+    width: 170px;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner .bap-img05 {
+    width: 170px;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner .bap-img02 {
+    width: 140px;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner .bap-img06 {
+    width: 140px;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner .bap-img01 {
+    width: 115px;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner .bap-img07 {
+    width: 115px;
+  }
+
+  .brand-customize.brand-dt-cont .voltron-figures__canvas {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 970px) {
+  .brand-customize.brand-dt-cont .voltron-defender__robot {
+    left: 8%;
+    top: -30%;
+    width: 51%;
+  }
+  .brand-customize.brand-dt-cont .voltron-defender__svg-bg {
+    left: 15%;
+    width: 55%;
+  }
+  .brand-customize.brand-dt-cont .voltron-defender__svg-bg svg {
+    width: 100%;
+    height: auto;
+  }
+  .brand-customize.brand-dt-cont .voltron-defender__svg-text {
+    top: 42%;
+    left: auto;
+    right: 8%;
+    width: 42%;
+  }
+  .brand-customize.brand-dt-cont .voltron-defender__svg-text svg {
+    width: 100%;
+    height: auto;
+  }
+  /* .voltron-figures */
+  .brand-customize.brand-dt-cont .voltron-figures .voltron-figures__yellow,
+  .voltron-figures .voltron-figures__blue,
+  .voltron-figures .voltron-figures__green {
+    width: 52%;
+  }
+  .brand-customize.brand-dt-cont .voltron-figures .voltron-figures__red {
+    width: 54%;
+  }
+  .brand-customize.brand-dt-cont .voltron-figures .voltron-figures__gray {
+    width: 54%;
+  }
+  /* .loadmap-step */
+  .brand-customize.brand-dt-cont .loadmap-step > li {
+    flex: 0 0 calc(100% / 3);
+    margin: 0;
+    background-position-x: 90%;
+    text-align: center;
+    background-size: 21px 40px;
+  }
+  .brand-customize.brand-dt-cont .voltron-figures__center {
+    bottom: -17%;
+  }
+}
+@media only screen and (max-width: 840px) {
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner img {
+    margin: 0 -20px;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner .bap-img04 {
+    width: 170px;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner .bap-img03 {
+    width: 140px;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner .bap-img05 {
+    width: 140px;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner .bap-img02 {
+    width: 115px;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner .bap-img06 {
+    width: 115px;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner .bap-img01 {
+    width: 100px;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner .bap-img07 {
+    width: 100px;
+  }
+}
+@media only screen and (max-width: 820px) {
+  .brand-customize.brand-dt-cont .voltron-roadmap__body {
+    padding-bottom: 60px;
+  }
+  .brand-customize.brand-dt-cont .voltron-main {
+    margin-bottom: 80px;
+  }
+  .brand-customize.brand-dt-cont .btn-voltron {
+    font-size: calc(18px + (30 - 18) * ((100vw - 320px) / (820 - 320)));
+    padding: 14px 20px;
+  }
+  .brand-customize.brand-dt-cont .voltron-font-size-xxl {
+    font-size: calc(36px + (90 - 36) * ((100vw - 320px) / (820 - 320)));
+    line-height: calc(40px + (120 - 40) * ((100vw - 320px) / (820 - 320)));
+  }
+  .brand-customize.brand-dt-cont .voltron-font-size-xl,
+  .loadmap-list__num {
+    font-size: calc(32px + (80 - 32) * ((100vw - 320px) / (820 - 320)));
+    line-height: calc(37px + (70 - 37) * ((100vw - 320px) / (820 - 320)));
+  }
+  .brand-customize.brand-dt-cont .voltron-font-size-l {
+    font-size: calc(29px + (70 - 29) * ((100vw - 320px) / (820 - 320)));
+    line-height: calc(37px + (70 - 37) * ((100vw - 320px) / (820 - 320)));
+  }
+  .brand-customize.brand-dt-cont .voltron-font-size-m {
+    font-size: calc(22px + (50 - 22) * ((100vw - 320px) / (820 - 320)));
+    line-height: calc(30px + (80 - 30) * ((100vw - 320px) / (820 - 320)));
+  }
+  .brand-customize.brand-dt-cont.brand-voltron {
+    font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (820 - 320)));
+    line-height: calc(20px + (27 - 20) * ((100vw - 320px) / (820 - 320)));
+    padding-bottom: calc(70px + (130 - 70) * ((100vw - 320px) / (820 - 320)));
+  }
+  /* .voltron-main */
+  .brand-customize.brand-dt-cont .voltron-main__header {
+    padding-top: 0;
+  }
+  .brand-customize.brand-dt-cont .loadmap-list__tit,
+  .brand-customize.brand-dt-cont .voltron-main__tit-desc {
+    position: relative;
+    font-size: calc(19px + (30 - 19) * ((100vw - 320px) / (820 - 320)));
+    line-height: calc(13px + (45 -13) * ((100vw - 320px) / (820 - 320)));
+  }
+  .brand-customize.brand-dt-cont .voltron-main__tit-desc::after {
+    margin-left: 8px;
+    height: 2px;
+  }
+  /* .voltron-defender */
+  .brand-customize.brand-dt-cont .voltron-defender {
+    padding: 40px 0;
+    margin-bottom: 0;
+  }
+  .brand-customize.brand-dt-cont .voltron-defender .brand-voltron__inner {
+    height: 0;
+    padding-top: 44%;
+  }
+  /* .voltron-figures */
+  .brand-customize.brand-dt-cont .voltron-figures .voltron-figures__yellow,
+  .brand-customize.brand-dt-cont .voltron-figures .voltron-figures__blue,
+  .brand-customize.brand-dt-cont .voltron-figures .voltron-figures__green {
+    width: 53%;
+  }
+  .brand-customize.brand-dt-cont .voltron-figures .voltron-figures__red {
+    width: 56%;
+  }
+  .brand-customize.brand-dt-cont .voltron-figures .voltron-figures__gray {
+    width: 55%;
+  }
+  /* .voltron-cont--short-intro */
+  .brand-customize.brand-dt-cont .voltron-big-text {
+    padding: 50px 0 100px;
+    margin-top: 50px;
+    font-size: calc(162px + (400 - 162) * ((100vw - 320px) / (820 - 320)));
+    line-height: calc(82px + (250 - 82) * ((100vw - 320px) / (820 - 320)));
+  }
+  /* .brand-discord */
+  .brand-customize.brand-dt-cont .brand-discord {
+    margin-bottom: 0;
+  }
+  .brand-customize.brand-dt-cont .brand-discord__logo {
+    margin-bottom: 16px;
+  }
+  .brand-customize.brand-dt-cont .brand-discord__tit {
+    font-size: calc(26px + (36 - 26) * ((100vw - 320px) / (820 - 320)));
+    line-height: calc(23px + (42 -23) * ((100vw - 320px) / (820 - 320)));
+  }
+  .brand-customize.brand-dt-cont .brand-discord___inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .brand-customize.brand-dt-cont .voltron-big-text__img {
+    width: 70%;
+  }
+  /* .voltron-cont--dream */
+  .brand-customize.brand-dt-cont .voltron-cont--dream {
+    margin-bottom: 60px;
+  }
+  .brand-customize.brand-dt-cont .voltron-cont--dream__bg-before {
+    width: 38%;
+    height: auto;
+    top: -20%;
+  }
+  .brand-customize.brand-dt-cont .voltron-cont--dream__bg-center {
+    width: 48%;
+    height: auto;
+  }
+  /* .voltron-roadmap */
+  .brand-customize.brand-dt-cont .voltron-roadmap__header {
+    padding-top: 180px;
+    min-height: 0;
+  }
+  .brand-customize.brand-dt-cont .voltron-roadmap__main-tit {
+    font-size: calc(48px + (90 - 48) * ((100vw - 320px) / (820 - 320)));
+    line-height: calc(40px + (94 - 40) * ((100vw - 320px) / (820 - 320)));
+  }
+  .brand-customize.brand-dt-cont .loadmap-list {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .brand-customize.brand-dt-cont .loadmap-step__text {
+    font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (820 - 320)));
+    line-height: calc(18px + (24 - 18) * ((100vw - 320px) / (820 - 320)));
+  }
+  .brand-customize.brand-dt-cont .loadmap-step__badge {
+    margin-bottom: 5px;
+  }
+  .brand-customize.brand-dt-cont .voltron-roadmap__main-tit-wrap {
+    margin-bottom: 20px;
+  }
+  .brand-customize.brand-dt-cont .voltron-roadmap__star {
+    width: 50%;
+    right: -56px;
+  }
+  .brand-customize.brand-dt-cont .voltron-roadmap__star svg {
+    width: 100%;
+  }
+  .brand-customize.brand-dt-cont .voltron-roadmap__line-img {
+    margin-top: 0;
+  }
+  .brand-customize.brand-dt-cont .voltron-roadmap__desc {
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+  .brand-customize.brand-dt-cont .upcoming-step {
+    width: auto;
+    margin: 0 40px;
+  }
+  .brand-customize.brand-dt-cont .upcoming-step__inner {
+    height: 60px;
+  }
+  .brand-customize.brand-dt-cont .upcoming-step__icon {
+    width: 60px;
+    height: 60px;
+    left: -24px;
+  }
+  .brand-customize.brand-dt-cont .step-circle {
+    width: 12px;
+    height: 12px;
+    border-width: 2px;
+  }
+  .brand-customize.brand-dt-cont .step-line {
+    width: 27%;
+  }
+}
+@media only screen and (max-width: 660px) {
+  /* .bap-img-wrap{display: block;width: 100%;} */
+
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner img {
+    margin: 0 -20px;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner .bap-img04 {
+    width: 140px;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner .bap-img03 {
+    width: 115px;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner .bap-img05 {
+    width: 115px;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner .bap-img02 {
+    width: 100px;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner .bap-img06 {
+    width: 100px;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner .bap-img01 {
+    width: 80px;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner .bap-img07 {
+    width: 80px;
+  }
+}
+
+@media only screen and (max-width: 544px) {
+  .brand-customize.brand-dt-cont .btn-voltron {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .brand-customize.brand-dt-cont .voltron-main__bg-object {
+    width: 60%;
+  }
+  .brand-customize.brand-dt-cont .voltron-main__txt {
+    padding-left: 30px;
+  }
+  .brand-customize.brand-dt-cont .voltron-main__spot {
+    text-align: right;
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .brand-customize.brand-dt-cont .btn-voltron__svg {
+    width: 20px;
+  }
+  .brand-customize.brand-dt-cont .voltron-defender__svg-text svg {
+    width: 100%;
+  }
+  .brand-customize.brand-dt-cont .voltron-roadmap__header {
+    padding-top: 100px;
+  }
+  .brand-customize.brand-dt-cont .voltron-roadmap__star {
+    right: -20px;
+    width: 44%;
+  }
+  .brand-customize.brand-dt-cont .loadmap-list__second__left {
+    width: 100%;
+    padding-right: 0;
+  }
+  .brand-customize.brand-dt-cont .loadmap-list__second__right {
+    width: 100%;
+    padding-top: 20px;
+  }
+  .brand-customize.brand-dt-cont .loadmap-step__badge {
+    font-size: 14px;
+    height: auto;
+    padding: 2px 10px;
+  }
+  .brand-customize.brand-dt-cont .loadmap-step > li {
+    background-size: 10px auto;
+    background-position-x: 96.2%;
+  }
+  .brand-customize.brand-dt-cont .loadmap-list__tit {
+    line-height: 22px;
+  }
+  .brand-customize.brand-dt-cont .upcoming-step {
+    margin: 0 30px;
+  }
+
+  /* .voltron-figures>img{width: 60%;} */
+  .brand-customize.brand-dt-cont .voltron-figures-wrap {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  .brand-customize.brand-dt-cont .voltron-figures .voltron-figures__yellow,
+  .brand-customize.brand-dt-cont .voltron-figures .voltron-figures__blue,
+  .brand-customize.brand-dt-cont .voltron-figures .voltron-figures__green {
+    width: 42%;
+  }
+  .brand-customize.brand-dt-cont .voltron-figures .voltron-figures__red {
+    width: 44%;
+  }
+  .brand-customize.brand-dt-cont .voltron-figures .voltron-figures__gray {
+    width: 44%;
+  }
+  .brand-customize.brand-dt-cont .voltron-figures .voltron-figures__center img {
+    width: 66%;
+    bottom: -14%;
+  }
+  .brand-customize.brand-dt-cont .voltron-figures__blue {
+    right: -12%;
+  }
+  .brand-customize.brand-dt-cont .voltron-figures__green {
+    right: -12%;
+  }
+  .brand-customize.brand-dt-cont .voltron-figures__red {
+    top: 14%;
+    left: -2%;
+  }
+  .brand-customize.brand-dt-cont .voltron-figures__gray {
+    left: -2%;
+  }
+  .brand-customize.brand-dt-cont .voltron-figures-wrap__bg {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .brand-customize.brand-dt-cont .voltron-big-text__img {
+    top: 40%;
+  }
+  .brand-customize.brand-dt-cont .voltron-bap-img__inner {
+    padding: 10px 0;
+  }
+  .brand-customize.brand-dt-cont .bap-img-wrap {
+    display: block;
+    width: 100%;
+  }
+  /* .voltron-cont--dream */
+  .brand-customize.brand-dt-cont .voltron-cont--dream__bg-before {
+    top: 10%;
+  }
+  .brand-customize.brand-dt-cont .voltron-cont--dream__bg-center {
+    width: 68%;
+  }
+  /* .voltron-cont--technology  */
+  .brand-customize.brand-dt-cont .voltron-cont--technology .voltron-cont__tit {
+    letter-spacing: -2px;
+  }
+  /* .brand-discord */
+  .brand-customize.brand-dt-cont .brand-discord {
+    padding: 56px 0 60px;
+  }
+  .brand-customize.brand-dt-cont .brand-discord___inner {
+    padding-top: 50px;
+    background: rgb(97 0 255 / 0.8);
+  }
+  .brand-customize.brand-dt-cont .brand-discord__logo {
+    display: block;
+    width: 50px;
+    height: 50px;
+  }
+  .brand-customize.brand-dt-cont .brand-discord__logo svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 490px) {
+  .brand-customize.brand-dt-cont .step-line {
+    width: 20%;
+  }
+}
+@media only screen and (max-width: 319px) {
+  .brand-customize.brand-dt-cont .btn-voltron {
+    font-size: 13px;
+    line-height: 18px;
+    padding: 10px 12px;
+  }
+}

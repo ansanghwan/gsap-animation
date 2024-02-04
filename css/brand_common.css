@@ -1,0 +1,332 @@
+/*
+   --------- 브랜드  상세에만 적용되는 공통 스타일 ---------
+    - 기존 작업된 스텔라와 지금 작업 중인 가갸 컨텐츠 기준으로 공통 css 작업함(기본 제목, 여백, 로드맵등 디폴트 스타일 작업함. )
+    - 기존 작업된 클래스명과 겹치지 않는 클래스명 .brand-dt-cont(브랜드 디테일컨텐츠)을 추가하여 공통 스타일 퍼블리싱 함.(앞으로 퍼블리싱하는 브랜드 상세에는 .brand-dt-cont 추가 해야됨)
+*/
+
+:root {
+    --stellaPcSize: 1440;
+    --stellaMoSize: 375;
+    --stellaPcWidth: 858;
+}
+
+
+
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+select,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+textarea,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    background: transparent;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+button,
+input {
+    font: inherit;
+}
+a,
+button {
+    cursor: pointer;
+}
+body,
+html {
+    background: #fff;
+}
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    outline: none;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #000;
+    font-size: 12px;
+    letter-spacing: -0.02em;
+    margin: 0 auto;
+    position: relative;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: "";
+    content: none;
+}
+em {
+    font-style: normal;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+button {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    background: transparent;
+}
+* {
+    box-sizing: border-box;
+}
+a {
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    text-decoration: none;
+}
+img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    display: block;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+/****************************** 
+    
+    PC STYlE - (미디어쿼리 없이 디폴트)
+
+*******************************/
+/* .brand-dt-banner(배너) */
+.brand-dt-banner{position: relative;display: flex;flex-wrap: wrap;align-items: center; margin-bottom: 80px;}
+.brand-dt-banner__left{flex: 1 1 470px;margin-right: auto;}
+.brand-dt-banner__right{max-width: 352px;width: 27.1%; margin-left: auto;}
+.brand-dt-banner__tit{margin-bottom: 16px;font-size: 50px;line-height: 56px;font-weight: 700;}
+.brand-dt-banner__btn{display: inline-flex;align-items: center;font-size: 30px;font-weight: 600;line-height: 50px;text-decoration: underline;}
+.brand-dt-banner__btn__svg{display: flex;width: 25px;margin-left:13px;align-items: center;}
+.brand-dt-banner__txt{font-weight: 400;line-height: 28px;font-size: 18px;}
+.brand-dt-cont{padding-bottom: 100px;}
+.brand-dt-cont .brand-cont {padding-bottom: 130px;font-size: 18px;line-height: 28px;font-weight: 400; }
+.brand-dt-cont .brand-tit {margin-bottom: 20px;font-size: 80px;line-height: 85px;}
+.brand-dt-cont .brand-sub-tit{margin-bottom: 5px;font-size: 50px;line-height: 56px;font-weight: 700;letter-spacing: -2px;}
+.brand-dt-cont .brand-tit-desc{margin-bottom: 16px;font-size: 30px;line-height: 36px;font-weight: 600;}
+.brand-tit-desc + .roadmap-list{margin-top: 52px;}
+.brand-dt-cont .brand-img{display: block;margin-top: 20px;}
+.brand-dt-cont .brand-img + .brand-dtbtn-wrap{margin-top: 40px;font-size: 35px;font-weight: 600;}
+.brand-dt-cont .produced-txt{text-align: center;}
+/* 브랜드 상세 버튼 */
+.brand-dt-cont .brand-dtbtn-wrap{position: relative;display: flex;flex-wrap: wrap;align-items: center;justify-content: center;}
+.brand-dt-btn{position: relative;z-index: 3; position: relative;padding: 25px 26px;color: #000;font-size: 35px;font-weight: 600;box-sizing: border-box;line-height: 50px;text-align: center;line-height: 30px;border-radius: 200px;background: linear-gradient(to right, #000 50%, #fff 50%);background-size: 200% 100%;background-position:right bottom;transition:all .15s;}
+.brand-dt-btn:hover{background-position:left bottom;color: #fff;}
+.brand-dt-btn:hover:before{width: 100%;}  
+.brand-dt-btn:after{content: '';box-sizing: border-box;position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;border-radius: 200px;border: 3px solid #000;}
+/* .brand-cont--flex */
+.brand-dt-cont .brand-cont--flex{display: flex;flex-wrap: wrap;}
+.brand-cont--flex .brand-cont__left{width: 50.8%;padding-right: 21px; margin-right: auto;}
+.brand-cont--flex .brand-cont__right{width: 49.2%;max-width: 637px; margin-left: auto;}
+.brand-dt-cont .brand-cont__right .brand-img:first-child{margin-top: 0;}
+/* 로드맵(.roadmap-list) */
+.brand-dt-cont .roadmap-list {margin-bottom: 52px; position: relative;}
+.brand-dt-cont .roadmap-list::before {content: "";display: inline-block;position: absolute;left: 6.48rem;top: 18px;width: 3px;height: calc(100% - 18px);background-color: #000;}
+.brand-dt-cont .roadmap-list::after{content: '';position: absolute;bottom: 0;left: 98px;border: solid #000;border-width: 0 3px 3px 0;width: 11px;padding-top: 11px;height: 0;transform: rotate(45deg);-webkit-transform: rotate(45deg);}
+.brand-dt-cont .roadmap-list dt {position: relative;margin-bottom: 10px;padding-left: 218px;font-size: 50px;font-weight: 700;line-height: 56px;}
+.brand-dt-cont .roadmap-list dt:before {content: "";display: inline-block;position: absolute;left: 91px;top: 18px;width: 30px;height: 30px;background-color: #000;}
+.brand-dt-cont .roadmap-list dd {padding-left: 218px;padding-bottom: 56px;}
+.brand-dt-cont .roadmap-list dd:last-child {padding-bottom: 0;}
+.brand-dt-cont .roadmap-list dd strong {display: block;font-size: 30px;line-height: 36px;font-weight: 600;margin-top: 20px;}
+.brand-dt-cont .roadmap-list dd p + p {margin-top: 15px;}
+.roadmap-list__img {display: block;margin-top:20px;max-width: 858px; text-align: center;}
+.roadmap-list__img img{display: inline-block; width: auto;vertical-align: top;}
+.roadmap-list__txt{max-width: 860px;}
+/* .brand-num-list */
+.brand-num-list>li{position: relative;padding-left: 26px;}
+.brand-num-list>li:before{position: absolute;top: 0;left: 0;}
+.brand-num-list>li:nth-child(1):before{content: '1.';}
+.brand-num-list>li:nth-child(2):before{content: '2.';}
+.brand-num-list>li:nth-child(3):before{content: '3.';}
+.brand-num-list>li:nth-child(4):before{content: '4.';}
+.brand-num-list>li:nth-child(5):before{content: '5.';}
+.brand-num-list>li:nth-child(6):before{content: '6.';}
+.brand-num-list>li:nth-child(7):before{content: '7.';}
+.brand-num-list>li:nth-child(8):before{content: '8.';}
+.brand-num-list>li:nth-child(9):before{content: '9.';}
+.brand-num-list>li:nth-child(10):before{content: '10.';}
+/* .brand-dot-list */
+.brand-dot-list>li{position: relative;padding-left: 42px;}
+.brand-dot-list>li:not(:first-child){margin-top: 18px;}
+.brand-dot-list>li:before{content: ''; position: absolute;top: 14px;left: 14px;width: 9px;height: 9px;border-radius: 100%;background: #000;}
+.brand-dot-list>li .brand-dot-list__spot:only-child{margin-bottom: 0;}
+.brand-dot-list__spot{font-size: 30px;font-weight: 600;line-height: 36px;margin-bottom: 12px;}
+/* .produced-txt */
+.brand-dt-cont .produced-txt {font-size: 25px; line-height: 38px; text-align: center; font-weight: 500;}
+
+
+/****************************** 
+    
+    Mobile, tablit(ipad air기준) 까지
+
+*******************************/
+@media only screen and (max-width: 820px) {
+    /* .brand-dt-banner(배너) */
+    .brand-dt-banner__left{order: 2;margin: 0;width: 100%;}
+    .brand-dt-banner__right{margin:0 auto 10px auto;order: 1;width: 100%;text-align: center;}
+    .brand-dt-banner__right img{width: 70%; display: inline-block;}
+    .brand-dt-banner{margin-bottom: calc(30px + (80 - 30) * ((100vw - 320px) / (820 - 320)))}
+    .brand-dt-banner__tit{margin-bottom: 10px;font-size: calc(24px + (50 - 24) * ((100vw - 320px) / (820 - 320)));line-height: calc(24px + (56 - 24) * ((100vw - 320px) / (820 - 320)));}
+    .brand-dt-banner__btn{font-size: calc(16px + (30 - 16) * ((100vw - 320px) / (820 - 320)));line-height: calc(20px + (50 - 20) * ((100vw - 320px) / (820 - 320)));justify-content: flex-end;width: 100%; }
+    .brand-dt-banner__btn__svg{display: flex;width: 16px;margin-left:8px;align-items: center;}
+    .brand-dt-banner__txt{font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (820 - 320)));line-height: calc(20px + (28 - 20) * ((100vw - 320px) / (820 - 320)));}
+    /* .brand-dt-cont(배너) */
+    .brand-dt-cont{padding-bottom: calc(34px + (100 - 34) * ((100vw - 320px) / (820 - 320)));}
+    /* .brand-tit */
+    .brand-dt-cont .brand-tit {font-size: calc(30px + (80 - 30) * ((100vw - 320px) / (820 - 320)));line-height: calc(36px + (85 - 36) * ((100vw - 320px) / (820 - 320)));}
+    /* .brand-sub-tit */
+    .brand-dt-cont .brand-sub-tit{font-size: calc(24px + (50 - 24) * ((100vw - 320px) / (820 - 320)));line-height: calc(24px + (56 - 24) * ((100vw - 320px) / (820 - 320))); }
+    /* .brand-tit-desc */
+    .brand-dt-cont .brand-tit-desc {font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (820 - 320)));line-height: calc(20px + (36 - 20) * ((100vw - 320px) / (820 - 320)));}
+    /* .brnd-cont */
+    .brand-dt-cont .brand-cont{font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (820 - 320)));line-height: calc(20px + (28 - 20) * ((100vw - 320px) / (820 - 320)));padding-bottom:calc(70px + (130 - 70) * ((100vw - 320px) / (820 - 320)));}
+    /* 브랜드 상세 버튼 */
+    .brand-dt-cont .brand-img + .brand-dtbtn-wrap {margin-top: 30px;}
+    .brand-dt-btn {font-size: calc(18px + (30 - 18) * ((100vw - 320px) / (820 - 320)));padding: 10px 16px;}
+    /* .brand-cont--flex */
+    .brand-cont--flex .brand-cont__left{width: 100%;padding-right: 0}
+    .brand-cont--flex .brand-cont__right{width: 100%;max-width: none;padding-top: 20px;}
+     /* 로드맵(.roadmap-list) */
+     .brand-dt-cont .roadmap-list {margin-top: calc(12 / var(--stellaMoSize) * 100vw);}
+     .brand-dt-cont .roadmap-list::before {left: 1.1%;}
+     .brand-dt-cont .roadmap-list::after{left: 0.3%;width: 1.6%;padding-top: 1.6%;border-width: 0 3px 3px 0;}
+     .brand-dt-cont .roadmap-list dt {font-size: calc(24px + (50 - 24) * ((100vw - 320px) / (820 - 320)));line-height: calc(24px + (56 - 24) * ((100vw - 320px) / (820 - 320)));padding-left: 7%;}
+     .brand-dt-cont .roadmap-list dt:before {top: 8px;left: 0;width:2.5%;height:0;padding-top:2.5%;}
+     .brand-dt-cont .roadmap-list dd {padding-left: 7%;}
+     .roadmap-list__img img{width: 100%;}
+     /* .brand-dot-list */
+     .brand-dot-list__spot{font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (820 - 320)));line-height: calc(24px + (36 - 24) * ((100vw - 320px) / (820 - 320)));}
+     /* .produced-txt */
+    .brand-dt-cont .produced-txt {font-size: calc(11px + (25 - 11) * ((100vw - 320px) / (820 - 320)));line-height: calc(15px + (38 - 15) * ((100vw - 320px) / (820 - 320)));}
+}
+
+
+/****************************** 
+    
+    Mobile
+
+*******************************/
+@media only screen and (max-width: 544px) {
+    /* .brand-dt-banner(배너) */
+    .brand-dt-banner__btn{margin-top: 10px;width: 100%;}
+    /* 로드맵(.roadmap-list) */
+    .brand-dt-cont .roadmap-list::before{left: 0.3rem;width: 2px;}
+    .brand-dt-cont .roadmap-list::after{left:0.2%;width: 8px;padding-top: 8px;border-width: 0 2px 2px 0;}
+    .brand-dt-cont .roadmap-list dt:before{width: 13px;padding-top: 13px;}
+    /* .brand-num-list */
+    .brand-num-list>li{padding-left: 17px;}
+    /* .brand-dot-list */
+    .brand-dot-list>li{padding-left: 12px;}
+    .brand-dot-list>li:before{left:0;top: 11px;width: 5px;height: 5px;}
+}
+@media only screen and (max-width: 400px) { 
+    .brand-dot-list>li:before{top: 9px;}
+}
+@media only screen and (max-width: 319px) {
+    .brand-dt-cont .brand-cont {padding-bottom: 30px;}
+    .brand-dt-cont .brand-tit{margin-bottom: 10px;}
+    .brand-dt-cont .brand-tit-desc{margin-bottom: 20px;}
+    .brand-dt-cont .roadmap-list dt {padding-left: 10%;}
+    .brand-dt-cont .roadmap-list dd {padding-left: 10%;padding-bottom: 30px;}
+} 
+
